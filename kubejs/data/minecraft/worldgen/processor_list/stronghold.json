@@ -1,0 +1,140 @@
+{
+	"processors": [
+		{
+			"rules": [
+				{
+					"output_state": {
+						"Name": "minecraft:infested_stone_bricks"
+					},
+					"input_predicate": {
+						"block": "minecraft:stone_bricks",
+						"probability": 0.05,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:cracked_stone_bricks"
+					},
+					"input_predicate": {
+						"block": "minecraft:stone_bricks",
+						"probability": 0.2,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:mossy_stone_bricks"
+					},
+					"input_predicate": {
+						"block": "minecraft:stone_bricks",
+						"probability": 0.3,
+						"predicate_type": "minecraft:random_block_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:end_portal_frame",
+						"Properties": {
+							"eye":"true",
+							"facing":"north"
+						}
+					},
+					"input_predicate": {
+						"block_state": {
+							"Name": "minecraft:end_portal_frame",
+							"Properties": {
+								"eye":"true",
+								"facing":"north"
+							}
+						},
+						"probability": 0.1,
+						"predicate_type": "minecraft:random_blockstate_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:end_portal_frame",
+						"Properties": {
+							"eye": "true",
+							"facing": "east"
+						}
+					},
+					"input_predicate": {
+						"block_state": {
+							"Name": "minecraft:end_portal_frame",
+							"Properties": {
+								"eye": "false",
+								"facing": "east"
+							}
+						},
+						"probability": 0.1,
+						"predicate_type": "minecraft:random_blockstate_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:end_portal_frame",
+						"Properties": {
+							"eye": "true",
+							"facing": "south"
+						}
+					},
+					"input_predicate": {
+						"block_state": {
+							"Name": "minecraft:end_portal_frame",
+							"Properties": {
+								"eye": "false",
+								"facing": "south"
+							}
+						},
+						"probability": 0.1,
+						"predicate_type": "minecraft:random_blockstate_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				},
+				{
+					"output_state": {
+						"Name": "minecraft:end_portal_frame",
+						"Properties": {
+							"eye": "true",
+							"facing": "west"
+						}
+					},
+					"input_predicate": {
+						"block_state": {
+							"Name": "minecraft:end_portal_frame",
+							"Properties": {
+								"eye": "false",
+								"facing": "west"
+							}
+						},
+						"probability": 0.1,
+						"predicate_type": "minecraft:random_blockstate_match"
+					},
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					}
+				}
+			],
+			"processor_type": "minecraft:rule"
+		}
+	]
+}

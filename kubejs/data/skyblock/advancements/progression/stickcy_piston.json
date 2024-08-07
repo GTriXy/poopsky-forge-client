@@ -1,0 +1,28 @@
+{
+  "parent": "skyblock:progression/kill_slime",
+  "display": {
+    "icon": {
+      "item": "minecraft:sticky_piston"
+    },
+    "title": {
+      "translate": "SHIT Piston!"
+    },
+    "description": {
+      "translate": "Make a SHIT Piston"
+    }
+  },
+  "criteria": {
+    "has_sticky_piston": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:sticky_piston"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
