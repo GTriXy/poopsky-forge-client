@@ -1,0 +1,28 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:kubejs:toilet_block",
+    {
+      "type": "item",
+      "id": "manure:manure",
+      "amount": 8
+    },
+    "item:kubejs:manure_block",
+    "item:anvilcraft:sapphire",
+    "item:anvilcraft:cocoa_powder",
+    "item:anvilcraft:chocolate",
+    "item:create:cut_scoria_wall",
+    "item:create:cut_scoria_stairs",
+    "item:create:mysterious_cuckoo_clock"
+  ],
+  "craft_history": [
+    "poopsky:manure_block"
+  ],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}
